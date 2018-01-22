@@ -21,7 +21,7 @@ Style Sheet created by Josue Barrientos // josue.barrientosperez0@gmail.com
 }
 
 p{
-	color: #777;
+	color: #555;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 100;
@@ -30,9 +30,11 @@ p{
 ul{
 	padding: 0;
 	margin: 0;
-	list-style-type: none;
 }
 
+body{
+	
+}
 
 /*/////////////////////////////////////////////////*/
 
@@ -40,8 +42,17 @@ ul{
 /*This styles apply to the header common content and navigation in all pages*/
 
 .logo{ /*Style for main logotype*/
-	visibility: collapse;
+	visibility: visible;
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	padding: 2px 0 0 2px;
+	margin: 0px;
+	background-image:  url(../img/jblogo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
+
 
 #logo > a{ 
 	font-size: 14px;
@@ -51,56 +62,15 @@ ul{
 	text-decoration: none;
 }
 
-.navbar-scroll{
-	position: fixed !important;
-	margin-top: 0px !important;
-	z-index: 1000;
+#main{
+	padding-top: 100px;
+	margin-bottom: 30px;
 }
 
 /*/////////////////////////////////////////////////*/
 
-/*---------  Footer Styles ---------*/
-/*This styles apply to footer section of every page of Grupo ZyR Web site*/
-
-/* header{
-	height: 500px;
-	background-color: black;
-	position: relative;
-} */
-
 textarea{
 	resize: none;
-}
-
-header{
-	height: 500px;
-	background-color: black;
-	position: relative;
-	width: 100%;
-	background-image: url(../img/cover.jpg);
-
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.barraNavegacion{
-	text-align: center;
-	width: 100%;
-}
-
-.navbar{
-	position: absolute;
- 	width: 100%;
- 	margin-top: 441px;
-}
-
-.barraNavegacion li{
-
-}
-
-.navbar-inverse{
-	
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -120,7 +90,7 @@ header{
 }
 
 .bg-inverse{
-	background-color: rgba(0,0,0,0.7) !important;
+	background-color: black !important;
 }
 
 .bg-color-scroll{
@@ -135,81 +105,129 @@ header{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-body{
-	text-align: center;
+.parrafo-datos{
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
 .titulo{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	font-size: 3.0rem;
-	color: #EDF0F2;
+	padding-left: 70px;
+	padding-right: 70px;
+	margin-bottom: 15px;	
 }
 
-.quien{
-	background-color: #0B3C4C;
-	padding-bottom: 70px;
-	padding-top: 40px;
+.subtitulo{
+	padding-top: 15px;
+	padding-left: 70px;
+	padding-right: 70px;	
+	margin-bottom: 15px;
 }
 
-.quien p{
-	margin-right: 100px;
+.contact{
+	font-size: 18px;
+	font-size: 2rem;
+	margin-left: 70px;
+}
+
+.lista-datos{
 	margin-left: 100px;
+	font-size: 20px;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
 }
 
-.servicios{
-	background-color: #24221F;
-	padding-bottom: 70px;
-	padding-top: 40px;
+.lista-datos li{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.titulo-sec{
-	margin-right: 100px;
-	margin-left: 100px;
+footer{
+	height: 60px;
+	width: 100%;
+	/* position: absolute;
+	bottom: 0; */
+	background-color: #333;
+	text-align: center;
+	position: relative;
 }
 
-.proyectos{
-	background-color: #363F45;
-	padding-bottom: 70px;
-	padding-top: 40px;
+.parrafo-pie{
+	font-size: 12px;
+	font-size: 1.0rem;
+	margin-top: 15px;
+	color: #999;
 }
 
-.proyectos p{
-	margin-right: 100px;
-	margin-left: 100px;
-}
-
-.contacto{
-	background-color: #0F1726;
-	padding-bottom: 70px;
-	padding-top: 40px;
-}
-
-.contacto p{
-	margin-right: 100px;
-	margin-left: 100px;
+.barraNavegacion{
+	text-align: center;
+	width: 100%;
 }
 
 /* Media Queries segun Bootstrap*/
 
 /* Dispositivos Pequeños (Celulares, apaisado) */
 @media (max-width: 576px){
+	footer{
+		height: 55px;
+	}
 
+	.parrafo-pie{
+		font-size: 10px;
+		font-size: 0.8rem;
+		margin-top: 10px;
+		color: #999;
+	}
 }
 
 /* Dispositivos Medianos (Tabletas) */
 @media (max-width: 768px){
 	
+	.parrafo-datos{
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1.2rem;
+	}
+
+	.titulo{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 15px;
+		font-size: 	1.8rem;
+		text-align: center;
+	}
+
+	.subtitulo{
+		padding-top: 15px;
+		padding-left: 10px;
+		padding-right: 10px;	
+		margin-bottom: 15px;
+		font-size: 	1.6rem;
+		text-align: center;
+	}
+
+	.contact{
+		font-size: 18px;
+		font-size: 2rem;
+		margin-left: 10px;
+	}
+
+	.lista-datos{
+		margin-left: 30px;
+		font-size: 20px;
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+	}
+
+	.lista-datos li{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 }
 
 /* Dispositivos grandes (Monitores) */
 @media (max-width: 992px){
-
-	header{
-		height: 70px;
-	}
-
 	.logo{ /*Style for main logotype*/
+		position: relative;
 		visibility: visible;
 		width: 60px;
 		height: 60px;
@@ -219,77 +237,8 @@ body{
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
-
-	.quien{
-		padding-bottom: 30px;
-		padding-top: 20px;
-	}
-
-	.quien p{
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-
-	.servicios{
-		padding-bottom: 30px;
-		padding-top: 20px;
-	}
-
-	.titulo-sec{
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-
-	.proyectos{
-		padding-bottom: 30px;
-		padding-top: 20px;
-	}
-
-	.proyectos p{
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-
-	.contacto{
-		padding-bottom: 30px;
-		padding-top: 20px;
-	}
-
-	.contacto p{
-		margin-right: 15px;
-		margin-left: 15px;
-	}
-
-	.header-float{
-		height: 100px;
-	}
-	
-	.navbar{
-		position: fixed;
-		margin-top: 0;
-		z-index: 100000;
-	}
-
-	.bg-inverse{
-		background-color: black !important;
-	}
-
 }
 
-.btn-enlace{
-	display: inline-block;
-	border:2px solid white;
-	color: #fff;
-	margin-top: 20px;
-	padding: 10px 48px;
-	text-decoration: none;
-	font-size: 20px;
-	font-size: 1.2rem;
-}
-
-.btn-enlace:hover{
-	color: white;
-}
 
 /* Dispositivos extra grandes (Monitores grandes) */
 @media (max-width: 1200px){
