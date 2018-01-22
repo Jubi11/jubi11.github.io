@@ -1,19 +1,10 @@
 @charset "utf-8";
 
 /******************************************************************************************************
-
-CSS Grupo ZyR 
-Style Sheet for original Grupo ZyR design 
-This style sheet contains the common styles for Grupo ZyR complete site
-
-Style Sheet created by Josue Barrientos // josue.barrientosperez0@gmail.com
-
+	
+		HOJA DE ESTILOS
+		
 *****************************************************************************************************/
-
-/*------------------------------------------------- STYLES -----------------------------------------------*/
-
-/*--------- General Styles ---------*/
-/*This styles apply to general common design in all pages*/
 
 *{
 	padding: 0;
@@ -38,10 +29,7 @@ body{
 
 /*/////////////////////////////////////////////////*/
 
-/*--------- Header and Navigation ---------*/
-/*This styles apply to the header common content and navigation in all pages*/
-
-.logo{ /*Style for main logotype*/
+.logo{ 
 	visibility: visible;
 	position: absolute;
 	width: 55px;
@@ -165,7 +153,6 @@ footer{
 
 /* Media Queries segun Bootstrap*/
 
-/* Dispositivos Pequeños (Celulares, apaisado) */
 @media (max-width: 576px){
 	footer{
 		height: 55px;
@@ -179,7 +166,6 @@ footer{
 	}
 }
 
-/* Dispositivos Medianos (Tabletas) */
 @media (max-width: 768px){
 	
 	.parrafo-datos{
@@ -224,9 +210,8 @@ footer{
 	}
 }
 
-/* Dispositivos grandes (Monitores) */
 @media (max-width: 992px){
-	.logo{ /*Style for main logotype*/
+	.logo{
 		position: relative;
 		visibility: visible;
 		width: 60px;
@@ -239,8 +224,6 @@ footer{
 	}
 }
 
-
-/* Dispositivos extra grandes (Monitores grandes) */
 @media (max-width: 1200px){
 	
 }
@@ -249,4 +232,4 @@ footer{
 /*/////////////////////////////////////////////////*/
 
 
-/*-------------------------------------------------- END ------------------------------------------------*/
+/*-------------------------------------------------- FIN ------------------------------------------------*/

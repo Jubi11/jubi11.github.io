@@ -2,19 +2,9 @@
 
 /******************************************************************************************************
 
-CSS Grupo ZyR 
-Style Sheet for original Grupo ZyR design 
-This style sheet contains the common styles for Grupo ZyR complete site
-
-Style Sheet created by Josue Barrientos // josue.barrientosperez0@gmail.com
+		HOJA DE ESTILOS
 
 *****************************************************************************************************/
-
-/*------------------------------------------------- STYLES -----------------------------------------------*/
-
-/*--------- General Styles ---------*/
-/*This styles apply to general common design in all pages*/
-
 *{
 	padding: 0;
 	margin: 0;	
@@ -36,10 +26,7 @@ ul{
 
 /*/////////////////////////////////////////////////*/
 
-/*--------- Header and Navigation ---------*/
-/*This styles apply to the header common content and navigation in all pages*/
-
-.logo{ /*Style for main logotype*/
+.logo{
 	visibility: collapse;
 }
 
@@ -58,15 +45,6 @@ ul{
 }
 
 /*/////////////////////////////////////////////////*/
-
-/*---------  Footer Styles ---------*/
-/*This styles apply to footer section of every page of Grupo ZyR Web site*/
-
-/* header{
-	height: 500px;
-	background-color: black;
-	position: relative;
-} */
 
 textarea{
 	resize: none;
@@ -192,24 +170,21 @@ body{
 
 /* Media Queries segun Bootstrap*/
 
-/* Dispositivos Pequeños (Celulares, apaisado) */
 @media (max-width: 576px){
 
 }
 
-/* Dispositivos Medianos (Tabletas) */
 @media (max-width: 768px){
 	
 }
 
-/* Dispositivos grandes (Monitores) */
 @media (max-width: 992px){
 
 	header{
 		height: 70px;
 	}
 
-	.logo{ /*Style for main logotype*/
+	.logo{
 		visibility: visible;
 		width: 60px;
 		height: 60px;
@@ -291,7 +266,6 @@ body{
 	color: white;
 }
 
-/* Dispositivos extra grandes (Monitores grandes) */
 @media (max-width: 1200px){
 	
 }
@@ -300,4 +274,4 @@ body{
 /*/////////////////////////////////////////////////*/
 
 
-/*-------------------------------------------------- END ------------------------------------------------*/
+/*-------------------------------------------------- FIN ------------------------------------------------*/
